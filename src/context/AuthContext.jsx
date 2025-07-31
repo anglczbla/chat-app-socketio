@@ -58,7 +58,7 @@ export const AuthProvider = ({ children }) => {
     socket.disconnect();
   };
 
-  //update profile function to handel user profile update
+  //update profile function to handle user profile update
   const updateProfile = async (body) => {
     try {
       const { data } = await axios.put("/api/auth/update-profile", body);
